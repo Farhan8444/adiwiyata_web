@@ -8,8 +8,8 @@ About Adiwiyata SMK PGRI 2 Ponorogo
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center text-primary">About Adiwiyata SMK PGRI 2 Ponorogo</h1>
-            <p class="lead text-justify">
+            <h1 class="text-center text-dark">About Adiwiyata SMK PGRI 2 Ponorogo</h1>
+            <p class="lead text-center">
                 SMK PGRI 2 Ponorogo berkomitmen untuk mengembangkan sekolah yang tidak hanya unggul dalam bidang akademik, tetapi juga peduli terhadap lingkungan hidup. Salah satu bentuk komitmen tersebut diwujudkan melalui program <b>Adiwiyata</b>, sebuah program yang bertujuan untuk menciptakan sekolah yang berbudaya lingkungan, dimana seluruh elemen sekolah berperan aktif dalam menjaga dan melestarikan lingkungan sekitar.
             </p>
             <h2 class="mt-4">Tujuan Program Adiwiyata</h2>
@@ -55,54 +55,142 @@ About Adiwiyata SMK PGRI 2 Ponorogo
 
 <!-- Inline CSS for Profil Adiwiyata Page Styling -->
 <style>
-    /* Page Styling */
-    .container {
-        padding: 0px;
-        border-radius: 12px;
+    /* General Page Styling */
+    body {
+        background-color: #f9f9f9; /* Warna latar belakang lembut */
+        font-family: 'Arial', sans-serif;
+        color: #2c3e50; /* Warna teks utama */
+    }
+
+    h1, h2, h3 {
+        color: #16a085; /* Warna hijau tegas */
     }
 
     h1 {
         font-size: 3rem;
-        color: #2980b9;
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 20px;
+        letter-spacing: 2px; /* Spasi antar huruf */
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 2px solid #16a085; /* Garis bawah */
+        padding-bottom: 5px;
     }
 
     .lead {
         font-size: 1.2rem;
         color: #34495e;
-        line-height: 1.6;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .subheading {
-        font-size: 2rem;
-        color: #2980b9;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
+    p {
+        color: #34495e;
+        line-height: 1.8;
+        font-size: 1rem;
+        margin-top: 10px;
     }
 
     ul, ol {
         font-size: 1rem;
         color: #34495e;
         line-height: 1.8;
+        padding-left: 20px;
+        margin-top: 10px;
     }
 
-    /* List Styling */
+    /* List Group Styling */
     .list-group-item {
-        background-color: #ecf0f1;
-        border: none;
+        background-color: #ffffff;
+        border: 1px solid #ddd; /* Border lembut */
         border-radius: 8px;
         margin-bottom: 10px;
         padding: 15px;
-        transition: all 0.3s ease;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .list-group-item:hover {
-        background-color: #d5dbdb;
-        transform: scale(1.03);
+        background-color: #f4f9f9; /* Warna hover lembut */
+        transform: scale(1.02);
+    }
+
+    .list-group-item b {
+        color: #16a085; /* Warna hijau pada teks tebal */
+    }
+
+    /* Buttons Styling */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #16a085;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #138d75;
+        transform: scale(1.05);
+    }
+
+    /* Table Styling */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1rem;
+        text-align: left;
+        color: #34495e;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 12px 15px;
+    }
+
+    table th {
+        background-color: #16a085;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f4f9f9;
+    }
+
+    table tr:hover {
+        background-color: #e9f5f5;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #16a085;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+
+    footer a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    footer a:hover {
+        color: #e9f5f5;
     }
 
     /* Responsive Design */
@@ -111,16 +199,16 @@ About Adiwiyata SMK PGRI 2 Ponorogo
             font-size: 2.5rem;
         }
 
-        .lead {
-            font-size: 1rem;
-        }
-
-        .subheading {
+        h2 {
             font-size: 1.5rem;
         }
 
-        .list-group-item {
-            font-size: 1rem;
+        p, ul, ol {
+            font-size: 0.9rem;
+        }
+
+        table {
+            font-size: 0.9rem;
         }
     }
 </style>

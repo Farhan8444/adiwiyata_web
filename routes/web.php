@@ -48,3 +48,10 @@ Route::put('/users/{user}', [UserController::class, 'update'])->name('users.upda
 Route::resource('categories', CategoryController::class);
 Route::resource('posts', PostController::class);
 Route::resource('posts.comments', CommentController::class)->shallow();
+
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');

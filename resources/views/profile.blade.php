@@ -39,45 +39,54 @@
 
 <!-- Inline CSS for Profil Adiwiyata Page Styling -->
 <style>
-    /* Page Styling */
-    .container {
-        padding: 0px;
-        border-radius: 12px;
-    }
+    /* General Styling */   
 
     h1 {
-        font-size: 3rem;
-        color: #2980b9;
-        font-weight: 700;
+        font-size: 2.8rem;
+        color: #2c3e50; /* Warna teks utama */
+        font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 20px;
+        letter-spacing: 1.5px;
     }
 
     .lead {
         font-size: 1.2rem;
         color: #34495e;
-        line-height: 1.6;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .subheading {
+    h2.subheading {
         font-size: 2rem;
-        color: #2980b9;
+        color: #16a085; /* Warna hijau tegas */
         margin-top: 30px;
         margin-bottom: 15px;
         text-transform: uppercase;
         font-weight: bold;
+        border-bottom: 2px solid #16a085; /* Garis bawah */
+        padding-bottom: 5px;
+    }
+
+    p {
+        color: #2c3e50;
+        line-height: 1.8;
+        font-size: 1rem;
     }
 
     ul, ol {
         font-size: 1rem;
         color: #34495e;
         line-height: 1.8;
+        padding-left: 20px;
+        margin-top: 10px;
     }
 
-    /* List Styling */
+    /* List Group Styling */
     .list-group-item {
-        background-color: #ecf0f1;
-        border: none;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
         border-radius: 8px;
         margin-bottom: 10px;
         padding: 15px;
@@ -85,8 +94,43 @@
     }
 
     .list-group-item:hover {
-        background-color: #d5dbdb;
-        transform: scale(1.03);
+        background-color: #f4f9f9;
+        transform: scale(1.02);
+    }
+
+    .list-group-item b {
+        color: #16a085; /* Warna teks tebal */
+    }
+
+    /* Ordered List Styling */
+    ol {
+        list-style-type: decimal;
+        padding-left: 40px;
+    }
+
+    ol li {
+        margin-bottom: 10px;
+        color: #34495e;
+    }
+
+    /* Buttons for Interactivity (Optional) */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #16a085;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        background-color: #138d75;
+        transform: scale(1.05);
     }
 
     /* Responsive Design */
@@ -99,12 +143,16 @@
             font-size: 1rem;
         }
 
-        .subheading {
+        h2.subheading {
             font-size: 1.5rem;
         }
 
         .list-group-item {
-            font-size: 1rem;
+            font-size: 0.9rem;
+        }
+
+        ol li {
+            font-size: 0.9rem;
         }
     }
 </style>

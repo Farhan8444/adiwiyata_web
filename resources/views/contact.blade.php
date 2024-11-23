@@ -9,11 +9,20 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="text-center">Contact Us</h1>
-            <p class="text-center">Untuk informasi lebih lanjut, Anda dapat menghubungi kami melalui saluran berikut:</p>
+            <p class="text-center">Mari bergabung bersama kami menjadi bagian dari keluarga besar Adiwiyata SMK PGRI 2 Ponorogo! Bersama-sama, kita ciptakan lingkungan sekolah yang bersih, hijau, dan berbudaya lingkungan. Tunjukkan kepedulianmu terhadap kelestarian alam dan jadilah agen perubahan bagi masa depan yang lebih baik. Hubungi kami melalui kontak di bawah ini untuk informasi lebih lanjut dan pendaftaran!</p>
             <ul class="contact-list">
-                <li><b>WhatsApp:</b> <a href="https://wa.me/085706813985" target="_blank">085706813985</a></li>
-                <li><b>Gmail:</b> <a href="mailto:hajiparhan3@gmail.com">hajiparhan3@gmail.com</a></li>
-                <li><b>Instagram:</b> <a href="https://www.instagram.com/ahmfrhnrfi/" target="_blank">@ahmfrhnrfi</a></li>
+                <li>
+                    <i class="fas fa-whatsapp"></i>
+                    <b>WhatsApp:</b> <a href="https://wa.me/085706813985" target="_blank">085706813985</a>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <b>Gmail:</b> <a href="mailto:hajiparhan3@gmail.com">hajiparhan3@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <b>Instagram:</b> <a href="https://www.instagram.com/ahmfrhnrfi/" target="_blank">@ahmfrhnrfi</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -22,68 +31,83 @@
 
 <!-- Inline CSS for Contact Page Styling -->
 <style>
-    /* Styling for the page */
-    .container {
-
-        border-radius: 8px;
-    }
-
+    /* Styling for the container */
     h1 {
-        font-size: 2.5rem;
-        color: #2980b9;
+        font-size: 3rem;
+        color: #2c3e50;
         margin-bottom: 20px;
         font-weight: bold;
         text-transform: uppercase;
+        position: relative;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: #16a085; /* Warna hijau tegas */
+        margin: 10px auto;
+        border-radius: 4px;
     }
 
     p {
-        font-size: 1.1rem;
-        color: #34495e;
+        font-size: 1.2rem;
+        color: #7f8c8d;
         line-height: 1.6;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     /* Styling for the contact list */
     .contact-list {
         list-style-type: none;
         padding: 0;
-        font-size: 1.1rem;
-        margin-bottom: 0;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        max-width: 600px;
     }
 
     .contact-list li {
         margin-bottom: 20px;
         display: flex;
         align-items: center;
-        color: #34495e;
-        transition: all 0.3s ease;
+        padding: 15px;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .contact-list li b {
-        color: #2980b9;
+    .contact-list li:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-list i {
+        font-size: 1.5rem;
+        color: #16a085; /* Warna hijau tegas */
+        margin-right: 15px;
+    }
+
+    .contact-list b {
+        color: #2c3e50;
         margin-right: 10px;
         font-weight: bold;
     }
 
     .contact-list a {
-        color: #3498db;
+        color: #16a085; /* Warna hijau tegas */
         text-decoration: none;
+        font-weight: 500;
         transition: color 0.3s ease, transform 0.3s ease;
     }
 
     /* Hover effects for links */
     .contact-list a:hover {
-        color: #1abc9c;
+        color: #1abc9c; /* Hijau lebih cerah untuk efek hover */
         text-decoration: underline;
         transform: translateX(4px);
-    }
-
-    /* Hover effect for list items */
-    .contact-list li:hover {
-        background-color: #ecf0f1;
-        border-radius: 8px;
-        padding-left: 15px;
-        transition: padding-left 0.3s ease, background-color 0.3s ease;
     }
 
     /* Mobile Responsiveness */
@@ -99,5 +123,10 @@
         .contact-list li {
             font-size: 1rem;
         }
+
+        .contact-list i {
+            font-size: 1.2rem;
+        }
     }
 </style>
+

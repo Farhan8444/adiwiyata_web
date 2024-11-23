@@ -7,16 +7,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
+            <a class="nav-link" aria-current="page" href="{{ route('home') }}">Beranda</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('profile') }}">Profile</a>
+            <a class="nav-link" href="{{ route('profile') }}">Profil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('about') }}">About</a>
+            <a class="nav-link" href="{{ route('about') }}">Tentang</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+            <a class="nav-link" href="{{ route('contact') }}">Kontak</a>
         </li>
         </ul>
     </div>
@@ -44,21 +44,21 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Beranda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('profile') }}">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('about') }}">About</a>
+                    <a class="nav-link" href="{{ route('about') }}">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                    <a class="nav-link" href="{{ route('contact') }}">Kontak</a>
                 </li>
             </ul>
         </div>
         <a href="{{ route('signup') }}" class="btn btn-outline-light mx-2">Sign Up</a>
-        <a href="{{ route('signin') }}" class="btn btn-outline-light">Signin</a>
+        <a href="{{ route('signin') }}" class="btn btn-outline-light">Sign In</a>
         @else
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
