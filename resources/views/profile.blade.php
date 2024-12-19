@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-<div class="container mt-5">
+<div class="container" style="padding-top: 48px;">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">Profil Adiwiyata di SMK PGRI 2 Ponorogo</h1>
+            <h1 class="text-center profile-header">Profil</h1>
             <p class="lead text-center">
                 Program Adiwiyata merupakan salah satu program pendidikan lingkungan hidup yang bertujuan untuk menciptakan sekolah yang peduli dan berbudaya lingkungan.
                 SMK PGRI 2 Ponorogo adalah salah satu sekolah yang berkomitmen untuk menjalankan program ini sebagai bagian dari upaya mencetak generasi muda yang peduli terhadap kelestarian lingkungan.
@@ -39,7 +39,20 @@
 
 <!-- Inline CSS for Profil Adiwiyata Page Styling -->
 <style>
-    /* General Styling */   
+    /* General Styling */
+
+/* Menambahkan latar belakang pada bagian judul Profil */
+.profile-header {
+    background-color: #f0f8ff; /* Warna latar belakang biru muda */
+    color: #2c3e50; /* Warna teks */
+    padding: 30px 20px; /* Memberikan padding pada teks */
+    border-radius: 8px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+    font-size: 2.8rem; /* Ukuran font */
+    font-weight: bold; /* Menebalkan teks */
+    text-transform: uppercase; /* Membuat teks menjadi huruf kapital semua */
+    margin-bottom: 20px;
+}
 
     h1 {
         font-size: 2.8rem;
@@ -155,4 +168,5 @@
             font-size: 0.9rem;
         }
     }
+
 </style>
